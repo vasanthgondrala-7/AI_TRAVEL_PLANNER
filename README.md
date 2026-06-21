@@ -18,6 +18,45 @@ The platform combines modern web technologies with Google's Gemini AI to provide
 
 ---
 
+# Live Demo
+
+## Frontend Application
+
+Access the live AI Travel Planner application:
+
+Frontend URL:
+https://ai-travel-planner-vasanthgondrala-7s-projects.vercel.app
+
+Login Page:
+https://ai-travel-planner-vasanthgondrala-7s-projects.vercel.app/login
+
+---
+
+## Backend API
+
+Backend Service URL:
+https://ai-travel-planner-backend-gy6l.onrender.com
+
+Health Endpoint:
+https://ai-travel-planner-backend-gy6l.onrender.com/api/health
+
+---
+
+## Deployment Platforms
+
+Frontend Deployment:
+Vercel
+
+Backend Deployment:
+Render
+
+Database:
+MongoDB Atlas
+
+AI Provider:
+Google Gemini 2.5 Flash
+
+
 # Features
 
 ### User Authentication
@@ -93,19 +132,60 @@ The platform combines modern web technologies with Google's Gemini AI to provide
 * Google Gemini API
 * Gemini 2.5 Flash Model
 
-## Deployment
+# Deployment Guide
 
-### Frontend
+## Production Deployment
 
-* Vercel
+### Frontend (Vercel)
 
-### Backend
+Live URL:
+https://ai-travel-planner-vasanthgondrala-7s-projects.vercel.app
 
-* Render
+### Backend (Render)
 
-### Database
+Live API:
+https://ai-travel-planner-backend-gy6l.onrender.com
 
-* MongoDB Atlas
+### Production API Base URL
+
+https://ai-travel-planner-backend-gy6l.onrender.com/api
+
+### Production Login Page
+
+https://ai-travel-planner-vasanthgondrala-7s-projects.vercel.app/login
+
+---
+
+## Backend Deployment (Render)
+
+1. Push repository to GitHub.
+2. Create Render Web Service.
+3. Select Root Directory:
+   backend
+4. Configure Environment Variables.
+5. Deploy.
+
+Required Variables:
+
+MONGO_URL=
+JWT_SECRET=
+GEMINI_API_KEY=
+CLIENT_URL=https://ai-travel-planner-vasanthgondrala-7s-projects.vercel.app
+
+---
+
+## Frontend Deployment (Vercel)
+
+1. Import GitHub repository.
+2. Set Root Directory:
+
+frontend
+
+3. Add Environment Variable:
+
+NEXT_PUBLIC_API_URL=https://ai-travel-planner-backend-gy6l.onrender.com/api
+
+4. Deploy.
 
 ---
 
